@@ -13,8 +13,12 @@
             <h1>Lista Telefonica</h1>
         </header>
         <form id="form-lista">
-            <input id="nome-contato" type="text" required placeholder="Nome do contato" />
-            <input id="numero-contato" type="number" required placeholder="Número do contato" />
+            <input id="nome-contato" type="text" required placeholder="Nome Sobrenome" />
+            <input id="numero-contato" type="tel" required placeholder="(DDD) Número" />
+            <div class="mini">
+                <input type="radio" name="tipo" id="whats"/><label for="whats">Whats</label>
+                <input type="radio" name="tipo" id="tel"/><label for="tel">Tel</label>
+            </div>
             <button type="submit">Adicionar</button>
         </form>
         <table cellspacing="0">
@@ -22,7 +26,7 @@
                 <tr>
                     <th>Nome do contato</th>
                     <th>Número do contato</th>
-                    <th>Whatsapp?</th>
+                    <th>Tipo</th>
                 </tr>
             </thead>
             <tbody>
@@ -37,10 +41,8 @@
                     <td>Não</td>
                 </tr>
             </tbody>
-            <tfoot>
-                <tr>Alguma mensagem interessante</tr>
-            </tfoot>
         </table>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

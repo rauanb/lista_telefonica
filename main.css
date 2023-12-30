@@ -38,7 +38,8 @@ form input, button {
 
 form {
     display: flex;
-    max-width: 900px;
+    align-items: center;
+    max-width: 960px;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 56px;
@@ -48,6 +49,10 @@ form input {
     background-color: white;
     border: none;
     border-bottom: 2px solid black;
+}
+
+#numero-contato {
+    max-width: 200px;
 }
 
 form button {
@@ -61,6 +66,8 @@ form button {
 
 table {
     width: 100%;
+    /* Colunas com a mesma largura */
+    table-layout: fixed;
 }
 
 table th {
@@ -75,4 +82,8 @@ table td {
     text-align: center;
     font-size: 18px;
     border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+
+table td img {
+    height: 30px;
 }
