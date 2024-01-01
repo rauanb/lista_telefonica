@@ -9,12 +9,13 @@
 <body>
     <div class="container">
         <header>
-            <img src="./img/1801457.png" alt="Lista telefonica">
+            <img src="./img/agenda.png" alt="Lista telefonica">
             <h1>Lista Telefonica</h1>
         </header>
         <form id="form-lista">
             <input id="nome-contato" type="text" required placeholder="Nome Sobrenome" />
-            <input id="numero-contato" type="tel" required placeholder="(DDD) Número" />
+            <!-- Adicionado pattern de telefone -->
+            <input id="numero-contato" type="tel" pattern="[0-9]{2}[0-9]{8,9}" required placeholder="(DDD) Número" />
             <div class="mini">
                 <input type="radio" name="tipo" id="whats"/><label for="whats">Whats</label>
                 <input type="radio" name="tipo" id="tel"/><label for="tel">Tel</label>
@@ -30,7 +31,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <!-- Contatos fictícios para teste de layout -->
+                <!-- <tr>
                     <td>Fulano</td>
                     <td>(99)99999-9999</td>
                     <td>Sim</td>
@@ -39,7 +41,7 @@
                     <td>Siclano</td>
                     <td>(99)99999-9999</td>
                     <td>Não</td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
     </div>
