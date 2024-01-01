@@ -5,13 +5,18 @@
 }
 
 body {
-    background-color: rgb(232, 236, 223);
+    /* Cor inversa do whatsapp para contraste */
+    /* background-color: rgba(214, 88, 229, 0.15); */
+    /* Mesma cor */
+    /* background-color: rgba(41, 167, 26, 0.10); */
+    /* Cor 1 baseada em tríade */
+    background-color: rgba(50, 0, 148, 0.15);
     padding: 100px;
 }
 
 header {
     display: flex;
-    align-items:last baseline;
+    align-items:center;
     margin-bottom: 40px;
 }
 
@@ -34,6 +39,10 @@ header h1 {
 form input, button {
     font-size: 24px;
     padding: 8px;
+}
+
+form input {
+    accent-color: #009432;
 }
 
 form {
