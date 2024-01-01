@@ -29,7 +29,7 @@ function adicionaLinha() {
         // Identificar o nome com o número
         let indNum = numeros.indexOf(inputNum.value);
         let auxNom = nomes[indNum];
-        alert(`O número de ${inputNum.value} já foi adicionado no contade de ${auxNom}!`);
+        alert(`O número de ${inputNum.value} já foi adicionado no contato de ${auxNom}!`);
     } else {
         nomes.push(inputNome.value);
         numeros.push(inputNum.value);
