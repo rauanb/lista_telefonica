@@ -59,7 +59,7 @@ function selecionaTipo() {
         let auxTipo = "";
         if (tipoContato[i].checked) {
             auxTipo = tipoContato[i].id;
-            console.log(auxTipo);
+            // console.log(auxTipo);
         }
         
         // Definição do ícone
